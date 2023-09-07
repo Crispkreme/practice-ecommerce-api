@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\CartsController;
-use App\Http\Controllers\PagesController;
-use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +13,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PagesController::class, 'index'])->name('home');
-Route::get('/shop', [ProductController::class, 'index'])->name('shop');
-Route::get('/shop/{id}', [ProductController::class, 'show'])->name('product');
-Route::get('/cart', [CartsController::class, 'cart'])->name('cart');
-Route::get('/add-to-cart/{id}', [CartsController::class, 'addToCart'])->name('add.to.cart');
-Route::get('/delete-from-cart/{id}', [CartsController::class, 'deleteFromCart'])->name('delete.from.cart');
