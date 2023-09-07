@@ -1,4 +1,4 @@
-# practice-ecommerce-api
+# Ecommerce API
 This is training purpose this course can be found in udemy for free the purpose is to learn how the RESTFUL-API work in backend functionality
 
 # What ive learn
